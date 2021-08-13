@@ -8,9 +8,9 @@
    text-align: center;
    vertical-align: middle;
 }
-#header .container .right-icon{
+/* #header .container .right-icon{
 
-}
+} */
 #header .container .right-icon li {
     text-decoration: none;
     display: inline; 
@@ -61,7 +61,7 @@
      
 }
 #banner{
-    background-image: url('image/banner.jpg');
+    background-image: url('../image/banner.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     height: 500px;
@@ -124,11 +124,11 @@
 #aboutus {
     padding: 55px ;
 }
-#aboutus .container {}
+/* #aboutus .container {}
 #aboutus .container .common_heading{
  
     
-}
+} */
 
 .common_heading h2{
     position: relative;
@@ -140,7 +140,7 @@
 .common_heading h2::before {
     position: absolute;
     content: "";
-    background-image: url('image/under-line.png');
+    background-image: url('../image/under-line.png');
     background-repeat: no-repeat;
     bottom: 0;
     top: 40px;
@@ -153,7 +153,6 @@
     justify-content: end;
 }
 #aboutus .container .left-image{
-    width: 100%;
     transition: all linear 0.3s;
     
  }
@@ -184,11 +183,11 @@
     text-align: center;
 }
 
-#service .service_body{
+/* #service .service_body{
     //border: 1px solid black;
 
 
-}
+} */
 #service .service_body .bottom:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 	transition: .3s;
@@ -200,7 +199,7 @@
 #service .container .service_body .top{
     position: relative;
     height: 40px;
-    //border: 1px solid;
+    /* //border: 1px solid; */
 
 }
 #service .container .service_body .top .top-top{
@@ -224,7 +223,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    //background-color: #f1f1f1;
+    background-color: #f1f1f1;
 
 }
 
