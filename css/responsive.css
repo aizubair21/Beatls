@@ -1,7 +1,7 @@
 /* extra small */
 @media screen and (max-width: 360px) {
   .container {
-    width: 95%;
+    width: 100%;
     overflow:visible;
   }
 
@@ -41,12 +41,55 @@
   #banner .container .banner_content .bins {
     display: block;;
   }
+
+  #aboutus {
+    margin: 20px 0;
+    padding: 0;
+  }
   #aboutus .container .left-site {
     justify-content: center;
   }
   #aboutus .container .left-image {
     width: -1%;
   }
+  #aboutus .container .right-site p{
+    line-height: normal;
+    text-align: center;
+    font-size: 15px;
+  }
+  #aboutus .container .right-site p:last-child{
+    display: none;
+  }
+
+  #service .common_heading {
+    margin-bottom: 0;
+  }
+
+
+  #service .container .service_body .top .top-top {
+    height: 65px;
+    width: 65px;
+  }
+  #service .container .bottom p {
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 0;
+    font-size: 11px;
+  }
+
+  #portfollio .container .common_heading {
+    padding-bottom: 0;
+  }
+
+  #testimonial .top img {
+    position: absolute;
+ 
+    border: 1px solid black;
+  }
+  #testimonial .bottom{
+    margin-bottom: 20px;
+  }
+
 }
 
 /* small device */
