@@ -1,0 +1,10 @@
+#slick_slider .slider-body img {
+	width: 100%;
+	height: auto;
+}
+
+#slick_slider {
+	width: 500px;
+	height: 300px;
+	padding: 10px;
+}

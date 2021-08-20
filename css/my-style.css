@@ -95,7 +95,7 @@
     color: white;
     margin-bottom: 28px;
 }
-#banner .container .banner_content .btns{
+#banner .container .banner_content .btns ul{
     display: inline-flex;
 	transition: .3s;
 }
@@ -218,7 +218,7 @@
     height: 83px;
     width: 83px;
     border-radius: 50%;
-    border: 4px solid rgb(255, 252, 252);
+    border: 4px solid rgb(255, 255, 255);
     text-align: center;
     position: absolute;
     left: 50%;
