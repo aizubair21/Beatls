@@ -1,10 +1,23 @@
-#slick_slider .slider-body img {
+#slider-body .slick-slider img {
 	width: 100%;
-	height: auto;
+	height: 450px;
 }
 
-#slick_slider {
-	width: 500px;
-	height: 300px;
-	padding: 10px;
+#slider-body {
+	width: 100%;
+	height: 500px;
+	margin: 10px 0;
+}
+.slick-slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	;
+}
+.slick-slider button {
+	background-color: black;
+	z-index: 1;
+}
+.slick-slider button:visited:active {
+	background-color: green;
 }
