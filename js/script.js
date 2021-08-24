@@ -32,4 +32,7 @@ $(document).ready (function() {
         progressLabel.text(setPercent());
         progressBar.attr({value: setValue(), max: setMax() });
     });
+
+
+    document.getElementById("loader").style.display = "none";
 });
