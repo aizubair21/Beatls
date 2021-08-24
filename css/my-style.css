@@ -37,8 +37,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-
 }
 
 /* #loader .loader-show{
@@ -95,36 +93,38 @@
 :root {
     --progress-bar-height: 4px;
     --progress-bar-color: gainsboro;
-    --progress-bar-value-color: dodgerblue;
+    --progress-bar-value-color: rgb(6, 121, 236);
     --progress-bar-value:  20%;
 }
 
 .progress-wrapper {
+    width: 100%;
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 999;
     /* border: 5px solid #1997eb; */
 }
 
 .progress-label {
     position: absolute;
-    right: 0;
+    right: -100%;
     top: 0;
     font-size: 15px;
-    background-color: #1997eb;
+    background-color: #61a3cf;
     color: white;
     padding: 5px;
     border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
 }
 progress {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     position: absolute;
+    top: 0;
     width: 100%;
     height: var(--progress-bar-height);
     background-color: var(--progress-bar-color);
     border: none;
+    z-index: 9999999;
 }
 progress::-moz-progress-bar {
     background-color: var(--progress-bar-value-color);

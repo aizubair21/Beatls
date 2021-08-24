@@ -21,9 +21,11 @@ $(document).ready (function() {
     const setPercent = () => Math.round(win.scrollTop() / (doc.height() - win.height()) * 100);
 
     progressLabel.text(setPercent() + "%");
-    progressBar.attr({value: setValue (), max: setMax() });
+    progressBar.attr({value: setValue(), max: setMax() });
+
 
     doc.on("scroll", () => {
+        progressLabel.css("right", 0);
         progressLabel.text(setPercent() + "%");
         progressBar.attr({value: setValue()});
     });
@@ -34,5 +36,5 @@ $(document).ready (function() {
     });
 
 
-    document.getElementById("loader").style.display = "none";
+    document.querySelector("#loader").style.display = "none";
 });
