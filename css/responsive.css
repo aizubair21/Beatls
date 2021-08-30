@@ -1,5 +1,5 @@
 /* extra small */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
   .container {
     width: 100%;
     overflow:visible;
@@ -63,7 +63,7 @@
   #aboutus .container .right-site p{
     line-height: normal;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
   }
   #aboutus .container .right-site p:last-child{
     display: none;
@@ -105,11 +105,37 @@
 }
 
 /* small device */
-@media (mix-width: 360px) and (max-width: 570px) {
+@media (min-width: 370px) and (max-width: 570px) {
   
+
 }
+@media (max-width: 768px) {
+  #aboutus .container .right-site p {
+    text-align: justify;
+  }
+  #banner .container .banner_content {
+    text-align: center;
+  }
+
+  #nav .container .nav_links ul li a {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  #aboutus .container .left-image {
+    text-align: center;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+  #aboutus {
+    padding: 0;
+  }
+}
+
+
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 570px) { 
   
 }
 

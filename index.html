@@ -8,9 +8,9 @@
     <title>Beatles</title>
 
     <!-- fontawesome -->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="fontawesome-free-5.15.3-web/css/fontawesome.min.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 
     <!-- bootstrap -->
@@ -50,12 +50,12 @@
    <div id="nav">
        <div class="container">
            <div class="row">
-               <div class="col-sm-2 col-sm-2">
+               <div class="col-sm-12 col-md-2 col-lg-2 d-flex justify-content-center">
                     <img class="logo" src="image/Beatles.png" alt="">
                </div>
-               <div class="col-sm-10 col-sm-10">
+               <div class="col-sm-12 col-md-10 col-lg-10" >
                     <div class="nav_links">
-                        <ul>
+                        <ul class="d-flex">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Gallery</a></li>
@@ -95,7 +95,7 @@
        <div class="overlay">
            <div class="container">
                <div class="row justify-content-end">
-                   <div class="col-sm-6">
+                   <div class="col-sm-12 col-md-12 col-lg-8 jcc">
                         <div class="banner_content">
                             <h2>HI! WR ARE</h2>
                             <H1>CREATIVE Designer</H1>
@@ -114,7 +114,7 @@
    </div>
 
    <section id="aboutus">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-12">
                    <div class="common_heading">
@@ -123,20 +123,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="sol-sm-12 col-md-5">
-                    <div class="left-site">
+                <div class="sol-sm-6 col-md-6 col-lg-5">
+                    <div class="left-site align-self-sm-center justify-content-md-end">
                         <img class="left-image" src="image/about-us-left-image.png" alt="about us">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-7">
+                <div class="col-sm-12 col-md-6 col-lg-7" >
                     <div class="right-site">
-                        <p>
+                        <p >
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
 
-                        <p>
+                        <p class="sm-hide">
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiaeserunt
                             mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -220,16 +220,17 @@
    <section id="portfollio">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <div class="common_heading">
                     <h2>Our Portfollio</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <p id="seeData"></p>
+            <div class="col-sm-12 col-md-6 col-lg-4">
 
-                <div class="image_body">
+                <div class="image_body  col-sm-6 com-md-6 col-lg-4">
                     <div class="overlay">
                         <a class="test-popup-link" href="image/firstrow-up.png">
                             <img src="image/port-folio-hover-icon.png" alt="" />
@@ -238,7 +239,7 @@
                     <img src="image/firstrow-up.png" href="image/firstrow-up.png" alt="">
                 </div>
 
-                <div class="image_body">
+                <div class="image_body  col-sm- com-md-6 col-lg-4">
                     <div class="overlay">
                         <a class="test-popup-link" href="image/firstrow-bottom.png">
                              <img src="image/port-folio-hover-icon.png" alt="" />
@@ -249,8 +250,8 @@
                 </div>
             </div>
 
-			<div class="col-md-4">
-                <div class="image_body">
+			<div class="col-sm-6 com-md-6 col-lg-4">
+                <div class="image_body  col-sm-6 com-md-6 col-lg-4">
                     <div class="overlay">
                         <a class="test-popup-link" href="image/secondrow-up.png">
                              <img src="image/port-folio-hover-icon.png" alt="" />
@@ -260,7 +261,7 @@
                     <img src="image/secondrow-up.png" href="image/secondrow-up.png" alt="">
                 </div>
 
-                <div class="image_body">
+                <div class="image_body  col-sm-6 com-md-6 col-lg-4">
                     <div class="overlay">
                         <a class="test-popup-link" href="image/secondrow-bottom.png">
                             <img src="image/port-folio-hover-icon.png" alt="" />
@@ -271,8 +272,8 @@
                 </div>
             </div>
 
-			<div class="col-md-4">
-                <div class="image_body">
+			<div class="col-sm-6 com-md-6 col-lg-4">
+                <div class="image_body col-sm-6 com-md-6 col-lg-4">
                     <div class="overlay">
                         <a class="test-popup-link" href="image/thirdrow-up.png">
                             <img src="image/port-folio-hover-icon.png" alt="" />
@@ -282,7 +283,7 @@
                     <img src="image/thirdrow-up.png" href="image/thirdrow-up.png" alt="">
                 </div>
 
-                <div class="image_body">
+                <div class="image_body col-sm-6 com-md-6 col-lg-4">
                     <div class="overlay">
                         <a class="test-popup-link" href="image/thirdrow-bottom.png">
                              <img src="image/port-folio-hover-icon.png" alt="" />
@@ -306,7 +307,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-sm-6 col-md-6 col-lg-3">
 					<div class="hoverbody">
 
                         <div class="top">
@@ -324,12 +325,20 @@
                         </div>
 
 						<div class="bottom">
-						    <h2> sajal sarder</h2>
-							<p >Web Designer</p>
+						    <h2
+                            class="team-member-name"
+                            data-name="Sajal Sardar";
+                            data-roll="1520201";
+                            data-post="Apps Developer";
+                            data-image="image/memberpic1.png";
+                            data-discription="Sajal one of the most Creative Apps Developer !"; 
+
+                            > sajal sarder</h2>
+							<p > Apps Developer </p>
 						</div>
 					</div>	
                 </div>
-				<div class="col-md-3">
+				<div class="col-sm-6 col-md-6 col-lg-3">
 					<div class="hoverbody">
                         <div class="top">
 
@@ -344,12 +353,12 @@
                             </div>
                         </div>
 						<div class="bottom">
-						    <h2>  sajal sarder </h2>
+						    <h2> Sadia Tabassum </h2>
 							<p> Web Designer </p>
 						</div>
 					</div>	
                 </div>
-				<div class="col-md-3">
+				<div class="col-sm-6 col-md-6 col-lg-3">
 					<div class="hoverbody">
                         <div class="top">
 
@@ -364,12 +373,12 @@
                             </div>
                         </div>
 						<div class="bottom">
-						    <h2 > sajal sarder</h2>
-							<p >Web Designer</p>
+						    <h2 > Safraj Khan </h2>
+							<p >Web Analyser</p>
 						</div>
 					</div>	
                 </div>
-				<div class="col-sm-3">
+				<div class="col-sm-6 col-md-6 col-lg-3">
 					<div class="hoverbody">
                         <div class="top">
 
@@ -384,8 +393,8 @@
                             </div>
                         </div>
 						<div class="bottom">
-						    <h2 > sajal sarder</h2>
-							<p >Web Designer</p>
+						    <h2 > Shefat Masun </h2>
+							<p >Full Stack Web Developer</p>
 						</div>
 					</div>	
                 </div>

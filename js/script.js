@@ -76,5 +76,11 @@ $(document).ready (function() {
         }
     })
 
+    
 
 });
+
+$("#team .bottom h2").on("click", function () {
+        console.log($(this).prop("dataset"));
+        document.getElementById("seeData").html($(this).prop("dataset"));
+    });
