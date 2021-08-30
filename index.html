@@ -10,7 +10,7 @@
     <!-- fontawesome -->
     <link href="fontawesome-free-5.15.3-web/css/all.min.css">
     <link href="fontawesome-free-5.15.3-web/css/fontawesome.min.css">
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 
     <!-- bootstrap -->
@@ -46,7 +46,7 @@
         <div class="progress-label"></div>
         <progress></progress>
     </div>
-    
+ 
    <div id="nav">
        <div class="container">
            <div class="row">
@@ -325,14 +325,15 @@
                         </div>
 
 						<div class="bottom">
-						    <h2
-                            class="team-member-name"
-                            data-name="Sajal Sardar";
-                            data-roll="1520201";
-                            data-post="Apps Developer";
-                            data-image="image/memberpic1.png";
-                            data-discription="Sajal one of the most Creative Apps Developer !"; 
-
+						    <h2 
+                                class="memberName"
+                                data-name="Sajal Sardar"
+                                data-post="Apps Developer"
+                                data-discription="Sajal sordar is an honest person. he is more than sufficient and more then excellent person. "
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                            
+                            
                             > sajal sarder</h2>
 							<p > Apps Developer </p>
 						</div>
@@ -353,7 +354,16 @@
                             </div>
                         </div>
 						<div class="bottom">
-						    <h2> Sadia Tabassum </h2>
+						    <h2 
+                                class="memberName"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#exampleModal"
+                                class="team-member-name"
+                                data-name="Sadia Tabassum";
+                                data-post="web Designer";
+                                data-discription="Sajal one of the most Creative Apps Developer !"; 
+
+                            > Sadia Tabassum </h2>
 							<p> Web Designer </p>
 						</div>
 					</div>	
@@ -373,7 +383,16 @@
                             </div>
                         </div>
 						<div class="bottom">
-						    <h2 > Safraj Khan </h2>
+						    <h2
+                                class="memberName"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                class="team-member-name"
+                                data-name="Safraj Khan";
+                                data-post="Web Analyser";
+                                data-discription="Sajal one of the most Creative Apps Developer !"; 
+                            
+                            > Safraj Khan </h2>
 							<p >Web Analyser</p>
 						</div>
 					</div>	
@@ -393,13 +412,42 @@
                             </div>
                         </div>
 						<div class="bottom">
-						    <h2 > Shefat Masun </h2>
+						    <h2 
+                                class="memberName"
+                                data-name="Shefat Masun"
+                                data-post="Full Stack Web Developer"
+                                data-discription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sapiente."
+                                
+                                data-bs-toggle="modal" 
+                                data-bs-target="#exampleModal"> Shefat Masun
+                                
+                            </h2>
 							<p >Full Stack Web Developer</p>
 						</div>
 					</div>	
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+            </div>
+        </div>
+  
     </div>
 
 	<section id="testimonial">
@@ -536,6 +584,8 @@
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 
       <!-- plugin script -->
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js.map"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
 

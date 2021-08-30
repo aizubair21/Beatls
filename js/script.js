@@ -75,12 +75,17 @@ $(document).ready (function() {
             // }
         }
     })
-
     
 
+    document.getElementById('exampleModal').addEventListener('shown.bs.modal', function () {});
+
+    $('.memberName').on('click', function () {
+        var memberName = $(this).data("name");
+        var memberPost = $(this).data("post");
+        var memberDiscription = $(this).data("discription");
+
+
+        console.log({memberName, memberPost, memberDiscription});
+    });
 });
 
-$("#team .bottom h2").on("click", function () {
-        console.log($(this).prop("dataset"));
-        document.getElementById("seeData").html($(this).prop("dataset"));
-    });
