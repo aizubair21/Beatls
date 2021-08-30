@@ -83,9 +83,15 @@ $(document).ready (function() {
         var memberName = $(this).data("name");
         var memberPost = $(this).data("post");
         var memberDiscription = $(this).data("discription");
+        var memberImage = $(this).data("image");
 
+        $('#exampleModalLabel').text(`${memberName}'s Bio Data`);
+        $('.modalDiscription .name p').text(memberName);
+        $('.modalDiscription .post p').text(`Expert as-${memberPost}`);
+        $('.modalDiscription .discription p').text(memberDiscription);
 
-        console.log({memberName, memberPost, memberDiscription});
+        console.log($('.modalImage img').prop("src", memberImage));
+        //console.log({memberName, memberPost, memberDiscription});
     });
 });
 

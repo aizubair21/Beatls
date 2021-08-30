@@ -30,7 +30,7 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/my-style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/plugin-custome-style.css">
 
 </head>
 <body>
@@ -329,9 +329,10 @@
                                 class="memberName"
                                 data-name="Sajal Sardar"
                                 data-post="Apps Developer"
+                                data-image="image/memberpic1.png"
                                 data-discription="Sajal sordar is an honest person. he is more than sufficient and more then excellent person. "
                                 data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"
+                                data-bs-target="#exampleModal";
                             
                             
                             > sajal sarder</h2>
@@ -362,6 +363,7 @@
                                 data-name="Sadia Tabassum";
                                 data-post="web Designer";
                                 data-discription="Sajal one of the most Creative Apps Developer !"; 
+                                data-image="image/memberpic2.png";
 
                             > Sadia Tabassum </h2>
 							<p> Web Designer </p>
@@ -390,7 +392,8 @@
                                 class="team-member-name"
                                 data-name="Safraj Khan";
                                 data-post="Web Analyser";
-                                data-discription="Sajal one of the most Creative Apps Developer !"; 
+                                data-discription="Sajal one of the most Creative Apps Developer !";
+                                data-image="image/memberpic3.png"; 
                             
                             > Safraj Khan </h2>
 							<p >Web Analyser</p>
@@ -417,7 +420,7 @@
                                 data-name="Shefat Masun"
                                 data-post="Full Stack Web Developer"
                                 data-discription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, sapiente."
-                                
+                                data-image="image/memberpic4.png";
                                 data-bs-toggle="modal" 
                                 data-bs-target="#exampleModal"> Shefat Masun
                                 
@@ -437,11 +440,29 @@
                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                ...
+                <div class="modal-body d-flex">
+                    <div class="col-md-6 modalImage ">
+                        <img src="image/ajax-loader.gif" class="img-thumbnail" alt="">
+                    </div>
+
+                    <div class="col-md-6 modalDiscription">
+                       
+                        <div class="name w-100">
+                            <i class="fas fa-star"></i>
+                            <p></p>
+                        </div>
+
+                        <div class="post">
+                            <p></p>
+                        </div>
+                        <div class="discription">
+                            <p></p>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button> -->
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                 </div>
             </div>
