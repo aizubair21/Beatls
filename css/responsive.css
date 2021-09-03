@@ -73,8 +73,10 @@
     margin-bottom: 0;
   }
 
-
-   #service .container .service_body .top .top-top {
+  #service .service_body {
+    margin: 5px 0;
+  }
+  #service .container .service_body .top .top-top {
     height: 65px;
     width: 65px;
   } 
@@ -130,6 +132,14 @@
   }
   #aboutus {
     padding: 0;
+  }
+  #service .service_body {
+    margin: 5px 0;
+  }
+
+
+  #testimonial .bottom{
+    margin-bottom: 20px;
   }
 }
 
