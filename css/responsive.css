@@ -95,6 +95,9 @@
     padding-bottom: 0;
   }
 
+  #team .overlay div {
+    width: 20%;
+  }
   #testimonial .top img {
     position: absolute;
  
@@ -104,6 +107,9 @@
     margin-bottom: 20px;
   }
 
+  .hide-xs {
+    display: none;
+  }
 }
 
 /* small device */
@@ -133,6 +139,10 @@
   #aboutus {
     padding: 0;
   }
+
+  #team .overlay div {
+    width: 20%;
+  }
   #service .service_body {
     margin: 5px 0;
   }
@@ -146,7 +156,9 @@
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 570px) { 
-  
+  #aboutus .container .left-image {
+    width: 80%;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */

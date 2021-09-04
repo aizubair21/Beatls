@@ -93,5 +93,9 @@ $(document).ready (function() {
         console.log($('.modalImage img').prop("src", memberImage));
         //console.log({memberName, memberPost, memberDiscription});
     });
+
+    $('.owl-carousel').owlCarousel ({
+        lazyLoad: true,
+    });
 });
 
