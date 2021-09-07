@@ -141,16 +141,17 @@ progress::-ms-fill {
 
 
 #nav .container .logo{
-    height: 25px;
-    margin: 10px;
-}
-/* #nav .nav_links{
-	width: 100%;
-    height: 100%;
+    height: 30px;
+    width: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+    align-self: center;
+}
+#nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 9;
+}
 #nav ul {
     margin: 0;
     display: flex;
@@ -161,11 +162,11 @@ progress::-ms-fill {
     color:black;
 	font-size: 15px;
     margin: 0 10px;
-    transition: all linear 0.5s;
     text-transform:uppercase ;
     position: relative;
     overflow: hidden;
     transition: all linear;
+    padding: 5px 10px;
 }
 
 #nav li:hover{
@@ -173,7 +174,7 @@ progress::-ms-fill {
     color: white;
     
 }
-#nav li:hover span {
+#nav li:hover:not(.active) span {
     left: 0;
 }
 #nav li span {
@@ -185,7 +186,28 @@ progress::-ms-fill {
     background: linear-gradient(90deg, transparent, #0872B9);
     transition: all linear .5s;
 }
-
+nav .nav-item {
+    overflow: visible;
+}
+.navbar {
+    padding: 0;
+}
+.active::before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%);
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #566066 transparent;
+}
+.active {
+    color: #0872B9; 
+    border-bottom: 4px solid #566066;
+    background-color: #1097f156;
+    
+}
 
 
 

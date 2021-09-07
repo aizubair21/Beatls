@@ -97,5 +97,13 @@ $(document).ready (function() {
     $('.owl-carousel').owlCarousel ({
         lazyLoad: true,
     });
+
+
+
+    $('.nav-item').on("click", function (e) {
+        $(".nav-item").removeClass("active");
+
+        $(this).addClass("active");
+    });
 });
 

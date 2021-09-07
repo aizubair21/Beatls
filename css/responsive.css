@@ -11,6 +11,15 @@
   #nav .nav_links {
    display: none;
   }
+  .active {
+    background-color: #7db0d3de;
+    border: none;
+  }
+  .active::before {
+    border: none;
+  }
+
+
   #banner {
     height: auto;
     
