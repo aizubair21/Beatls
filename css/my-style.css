@@ -1,3 +1,6 @@
+html, body {
+    overflow-x: hidden;
+}
 .container{
     box-sizing: border-box;
 }
@@ -39,20 +42,24 @@
     align-items: center;
 }
 
-/* #loader .loader-show{
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg,transparent, green);
-    border-radius: 25px;
-    animation: spin-loader linear 1.5s infinite;
-    position: absolute;
+#loader .loader-show{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px dotted;
+    border-top: 10px double #0872B9;
+    animation: spin-loader ease-in-out 1.5s infinite;
+    /* position: absolute;
     top: 50%;
-    left: -100%;
-    
+    left: 50%;
+    transform: translate(-50%, -50%); */
 
-} */
+}
+@keyframes spin-loader {
+    to {transform: rotate(360deg);}
+}
 
-#loader .loader-show {
+/* #loader .loader-show {
     width: 2px;
     height: 2px;
     background: linear-gradient(90deg, transparent, green);
@@ -61,7 +68,7 @@
     border-right-color: white ;
     border-left-color: white ;
     animation: bird-play 0.5s linear infinite;
-}
+} */
 
 @keyframes bird-play {
     to {transform: rotateY(360deg);}
@@ -160,13 +167,12 @@ progress::-ms-fill {
 #nav ul li{
     text-decoration: none;
     color:black;
-	font-size: 15px;
+	font-size: 12px;
     margin: 0 10px;
     text-transform:uppercase ;
     position: relative;
     overflow: hidden;
-    transition: all linear;
-    padding: 5px 10px;
+    transition: all linear .5s;
 }
 
 #nav li:hover{
@@ -186,6 +192,17 @@ progress::-ms-fill {
     background: linear-gradient(90deg, transparent, #0872B9);
     transition: all linear .5s;
 }
+nav li span:last-child{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    /* background: linear-gradient(transparent, #0872B9); */
+}
+#nav li:hover:not(.active) .hoverLeft {
+    top: 100%;
+}
 nav .nav-item {
     overflow: visible;
 }
@@ -200,15 +217,22 @@ nav .nav-item {
     transform: translate(-50%);
     border-width: 15px;
     border-style: solid;
-    border-color: transparent transparent #566066 transparent;
+    border-color: transparent transparent transparent;
+    filter: blur(5px);
 }
 .active {
     color: #0872B9; 
-    border-bottom: 4px solid #566066;
-    background-color: #1097f156;
+    border-bottom: 4px solid green;
+    backdrop-filter: var(10px);
+    background-color: #ccc7c7b4;
     
 }
-
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+    line-height: 21px;
+    height: 100%;
+    font-weight: 600;
+}
 
 
 
@@ -236,6 +260,7 @@ nav .nav-item {
     font-size: 30px;
     padding-bottom: 13px;
     color: white;
+    font-weight: 600;
 }
 #banner .container .banner_content h1{
     color: white;
@@ -243,6 +268,7 @@ nav .nav-item {
     font-family: 'Oswald', sans-serif;
     margin-bottom: 19px;
     text-transform: uppercase;
+    font-weight: 600;
 
 }
 #banner .container .banner_content p{
@@ -255,9 +281,7 @@ nav .nav-item {
 }
 #banner .container .banner_content .btns li{
     list-style-type: none;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'Oswald', sans-serif;
+ 
     margin-left: 20px;
 }
 #banner .container .banner_content .btns li a{
@@ -265,6 +289,9 @@ nav .nav-item {
     padding: 10px 20px;
     text-decoration: none;
     color: rgb(255, 255, 255); 
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
     transition: .3s;
 	
 }
@@ -276,7 +303,9 @@ nav .nav-item {
 }
 
 #aboutus {
-    padding: 55px ;
+
+    margin: 20px 0;
+    padding: 30px 0;
 }
 /* #aboutus .container {}
 #aboutus .container .common_heading{
@@ -333,7 +362,13 @@ nav .nav-item {
 
 /* service start */
 #service{
-    padding-bottom: 30px;
+    
+    margin: 20px 0;
+    padding: 30px 0;
+    background: linear-gradient(180deg, #0872B9, transparent);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
 #service .common_heading{
     margin-bottom: 30px;
@@ -350,8 +385,8 @@ nav .nav-item {
 
 }
 #service .container .service_body .top .top-top{
-    height: 75px;
-    width: 75px;
+    height: 73px;
+    width: 73px;
     border: 1px solid black;
     border-radius:50%;
     position: absolute;
@@ -372,7 +407,7 @@ nav .nav-item {
     left: 50%;
     transform: translateX(-50%);
     background-color: #f1f1f1;
-
+    box-shadow: 0px 0px 3px gray;
 }
 #service .service_body:hover .top .top-top {
     background-color: #4ea0d6be;
@@ -380,7 +415,7 @@ nav .nav-item {
 }
 #service .service_body:hover .bottom{
     /* border: 2px solid #0872B9; */
-    box-shadow: 0px 0px 5px #0872B9;
+    box-shadow: 0px 0px 5px gray;
 	transition: .3s;
 }
 
@@ -420,6 +455,7 @@ nav .nav-item {
 
 #portfollio{
     padding-top: 25px;
+    background: radial-gradient( #0872B9, transparent, transparent);
 }
 #portfollio .container .common_heading{
     padding-bottom: 20px;
@@ -534,12 +570,9 @@ nav .nav-item {
     height: 100%;
 }
 #team .overlay i {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    margin: 5px 5px;
-    font-size: 25px;
-    background-color: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
     border: 1px solid white;
     border-radius: 50%;
     color: white;

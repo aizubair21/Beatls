@@ -46,13 +46,13 @@
     letter-spacing: .2px;
     word-spacing: 1px;
   }
-  #banner .container .banner_content .btns ul {
+  /* #banner .container .banner_content .btns ul {
     display: block;
     padding-left: 0;
     margin-bottom: 0;
     height: auto;
     width: 100%;
-  }
+  } */
   #banner .container .banner_content .btns ul li {
     padding: 15px;
     margin: 0;
@@ -85,10 +85,10 @@
   #service .service_body {
     margin: 5px 0;
   }
-  #service .container .service_body .top .top-top {
+  /* #service .container .service_body .top .top-top {
     height: 65px;
     width: 65px;
-  } 
+  }  */
   #service .service_body .top .icon {
     width: 70px;
     height: 70px;
@@ -129,6 +129,7 @@
 @media (max-width: 768px) {
   #aboutus .container .right-site p {
     text-align: justify;
+    margin: 10px 0px;
   }
   #banner .container .banner_content {
     text-align: center;

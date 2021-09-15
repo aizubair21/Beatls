@@ -85,3 +85,9 @@
 	font-family: serif;
 	line-height: normal;
 }
+
+
+#side-menu button {
+	float: right;
+	border: none;
+}
