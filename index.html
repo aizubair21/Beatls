@@ -74,7 +74,7 @@
                     </div> -->
 
 
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="text-align: right;">
+                    <nav class="navbar navbar-expand-lg navbar-light " style="text-align: right;">
                         <div class="container-fluid" style="display: block;">
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fas fa-align-right"></span>
@@ -82,28 +82,34 @@
 
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"> <span class="hide-sm hide-xs"></span> <span class="hoverLeft hide-sm hide-xs"></span> Home</a>
+                              <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="index.html"> Home </a>
+                                <span class="hover_effect hide-sm hide-xs">HOME</span>
                               </li>
 
                               <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"> <span class="hide-sm hide-xs"></span> <span class="hoverLeft hide-sm hide-xs"></span> About us</a>
+                                <a class="nav-link" aria-current="page" href="#aboutus"> About us</a>
+                                <span class="hover_effect hide-sm hide-xs">ABOUT US</span>
                               </li>
 
                               <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"> <span class="hide-sm hide-xs"></span> <span class="hoverLeft hide-sm hide-xs"></span> Gallery</a>
+                                <a class="nav-link" aria-current="page" href="#service"> Gallery</a>
+                                <span class="hover_effect hide-sm hide-xs">GALLERY</span>
                               </li>
 
                               <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"> <span class="hide-sm hide-xs"></span> <span class="hoverLeft hide-sm hide-xs"></span> Portfolio</a>
+                                <a class="nav-link" aria-current="page" href="#portfollio"> Portfolio</a>
+                                <span class="hover_effect hide-sm hide-xs">PORTFOLLIO</span>
                               </li>
 
                               <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"> <span class="hide-sm hide-xs"></span> <span class="hoverLeft hide-sm hide-xs"></span> Testimonial</a>
+                                <a class="nav-link" aria-current="page" href="#testimonial"> Testimonial</a>
+                                <span class="hover_effect hide-sm hide-xs">TESTIMONIAL</span>
                               </li>
 
-                              <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#"> <span class="hide-sm hide-xs"></span> <span class="hoverLeft hide-sm hide-xs"></span> Contact</a>
+                              <li class="nav-item" id="contactUs" >
+                                <a class="nav-link" aria-current="page" href="#"> Contact</a>
+                                <span class="hover_effect hide-sm hide-xs">CONTACT</span>
                               </li>
                               
                             </ul>
@@ -645,6 +651,42 @@
         </div>
     </footer>
 
+
+
+    <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact to BEATLS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Name:</label>
+                  <input type="text" class="form-control" id="sender-name" placeholder="Name...">
+                </div>
+
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">E-mail:</label>
+                  <input type="email" class="form-control" id="sender-email" placeholder="email..."/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">E-mail:</label>
+                    <textarea class="form-control" id="sender-message" placeholder=" Your Text..."></textarea>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" id="closeModal" class="btn btn-primary">Send to BEATLS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
   
 
     <!-- JQuery -->
@@ -654,7 +696,7 @@
     <!-- plugin script -->
     <script src="js/filtarizer.min.js"></script>
     <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
-    <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js.map"></script>
+    <!-- <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js.map"></script> -->
 
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
 

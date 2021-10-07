@@ -102,8 +102,21 @@ $(document).ready (function() {
 
     $('.nav-item').on("click", function (e) {
         $(".nav-item").removeClass("active");
-
         $(this).addClass("active");
+        var bc = $(".nav-item");
+        console.log(bc);
+    });
+
+
+
+    // contact us modal
+    $("#contactUs").on("click", function () {
+        $("#contactUsModal").modal("toggle")
+    }); 
+
+    // close modal if click to send button
+    $("#closeModal").on("click", function () {
+        $("#contactUsModal").modal("hide");
     });
 });
 

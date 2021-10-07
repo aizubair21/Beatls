@@ -1,6 +1,7 @@
 html, body {
     overflow-x: hidden;
 }
+
 .container{
     box-sizing: border-box;
 }
@@ -147,61 +148,119 @@ progress::-ms-fill {
 
 
 
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+}
 #nav .container .logo{
     height: 30px;
     width: 50px;
     display: flex;
     align-self: center;
 }
-#nav {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 9;
-}
+
 #nav ul {
     margin: 0;
     display: flex;
-
 }
+
 #nav ul li{
-    text-decoration: none;
-    color:black;
-	font-size: 12px;
-    margin: 0 10px;
+    color:#0872B9;
     text-transform:uppercase ;
     position: relative;
-    overflow: hidden;
-    transition: all linear .5s;
+    /* overflow: hidden; */
+    cursor: pointer;
+    text-align: center;
 }
+.hover_effect {
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* border: 1px solid green; */
+    z-index: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all linear .5s;
 
-#nav li:hover{
+    /* transform: translate(-50%); */
+
+}
+.navbar-light .navbar-nav .nav-item .nav-link{
+    display: flex;
+    color: black;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: 0px 2px;
+}
+.navbar-light .navbar-nav .nav-item:hover.nav-item .nav-link {
+    /* position: relative; */
+    transition:linear .5s;
+    transform: scale(.5);
+}
+.navbar-light .navbar-nav .nav-item:hover .hover_effect {
+    transition: all linear .5s;
+    z-index: 3;
+    transform: scale(1.2);
+}
+/* .navbar-light .navbar-nav .nav-link::after {
+    content: "HOVER";
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    bottom: -80%;
+    transform: rotate(20deg);
+}
+.navbar-light .navbar-nav .nav-item:hover .nav-link::after {
+    transition: linear .5s;
+    bottom: 150%;
+} */
+
+#nav ul li:hover:not(.active) {
     text-decoration: none;
-    color: white;
+
+}
+/* 
+#nav ul li:hover:not(.active) span:first-child {
+    transition: linear .5s;
+    left: 100%;
     
 }
-#nav li:hover:not(.active) span {
-    left: 0;
-}
-#nav li span {
+#nav ul li span:first-child {
     position: absolute;
     left: -100%;
     bottom: 0;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #0872B9);
-    transition: all linear .5s;
 }
-nav li span:last-child{
+#nav li span:last-child{
     position: absolute;
     right:0;
-    top: 0;
+    bottom: -100%;
     width: 2px;
     height: 100%;
-    /* background: linear-gradient(transparent, #0872B9); */
-}
+    background: linear-gradient(transparent, #0872B9);
+} */
 #nav li:hover:not(.active) .hoverLeft {
-    top: 100%;
+    transition: linear .5s;
+    transition-delay: .2s;
+    bottom: 100%;
 }
 nav .nav-item {
     overflow: visible;
@@ -209,31 +268,17 @@ nav .nav-item {
 .navbar {
     padding: 0;
 }
-.active::before {
-    content: " ";
-    position: absolute;
-    left: 50%;
-    bottom: -10%;
-    transform: translate(-50%);
-    border-width: 15px;
-    border-style: solid;
-    border-color: transparent transparent transparent;
-    filter: blur(5px);
-}
-.active {
-    color: #0872B9; 
-    border-bottom: 4px solid green;
-    backdrop-filter: var(10px);
-    background-color: #ccc7c7b4;
-    
-}
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(0, 0, 0);
-    line-height: 21px;
-    height: 100%;
-    font-weight: 600;
-}
 
+/* .active {
+    border-bottom: 4px solid #0872B9;
+    /* backdrop-filter: blur(10px); */
+    /* background-color: white; */
+    padding: 0px 10px;
+    color: #0872B9;
+    /* border: 1px solid black; */
+    cursor: pointer;
+
+} */
 
 
 
@@ -242,7 +287,7 @@ nav .nav-item {
     background-image: url('../image/banner.jpg');
     background-repeat: no-repeat;
     background-size:cover;
-    height: 500px;
+    height: 100vh;
 }
 #banner .overlay{
 	background-color: rgba(0, 0, 0, 0.5);
@@ -251,7 +296,10 @@ nav .nav-item {
 #banner .container .banner_content{
     text-align: right;
     padding: 50px;
-    margin-top: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
    
 }
 
@@ -305,7 +353,7 @@ nav .nav-item {
 #aboutus {
 
     margin: 20px 0;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 /* #aboutus .container {}
 #aboutus .container .common_heading{
@@ -364,7 +412,7 @@ nav .nav-item {
 #service{
     
     margin: 20px 0;
-    padding: 30px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, #0872B9, transparent);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -454,7 +502,7 @@ nav .nav-item {
 
 
 #portfollio{
-    padding-top: 25px;
+    padding: 40px 0;
     background: radial-gradient( #0872B9, transparent, transparent);
 }
 #portfollio .container .common_heading{
@@ -640,6 +688,7 @@ nav .nav-item {
 
 #testimonial{
 	width: 100%;
+    padding: 40px 0;
 	margin: 30px 0;
     position: relative;
     display: flex;
